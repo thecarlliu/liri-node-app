@@ -26,3 +26,47 @@ Song: The Sign
 Preview: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
 Album: The Sign (US Album) [Remastered]
 
+Input:
+my-tweets
+Output:
+test 20
+Wed Jan 31 22:27:49 +0000 2018
+test 19
+Wed Jan 31 22:27:46 +0000 2018
+test 18
+Wed Jan 31 22:27:43 +0000 2018
+test 17
+Wed Jan 31 22:27:41 +0000 2018
+test 16
+Wed Jan 31 22:27:38 +0000 2018
+test 15
+Wed Jan 31 22:27:35 +0000 2018
+test 14
+Wed Jan 31 22:27:32 +0000 2018
+test 13
+Wed Jan 31 22:27:29 +0000 2018
+test 12
+Wed Jan 31 22:27:26 +0000 2018
+test 11
+Wed Jan 31 22:27:23 +0000 2018
+test 10
+Wed Jan 31 22:27:20 +0000 2018
+test 9
+Wed Jan 31 22:27:17 +0000 2018
+test 8
+Wed Jan 31 22:27:13 +0000 2018
+test 7
+Wed Jan 31 22:27:11 +0000 2018
+test 6
+Wed Jan 31 22:27:08 +0000 2018
+test 5
+Wed Jan 31 22:27:04 +0000 2018
+test 4
+Wed Jan 31 22:27:01 +0000 2018
+test 3
+Wed Jan 31 18:14:19 +0000 2018
+test 2
+Wed Jan 31 18:14:14 +0000 2018
+test 1
+Wed Jan 31 18:14:07 +0000 2018
+

@@ -6,12 +6,7 @@ var command = process.argv[2];
 
 //shows last 20 tweets and when they were created
 if (command == "my-tweets") {
-	var client = new Twitter(keys.twitter);
-
-	var queryURL = "https//api.twitter.com/1.1/search/tweets.json&count=10";
-	
-
-
+	searchTweets();
     log("Input:\n"+process.argv[2]+"\n");
 }
 //shows artist, song name, preview link of song from Spotify, and album the song is from
@@ -60,7 +55,23 @@ else if (command == "do-what-it-says") {
 	});
 }
 
-function searchTwitter() {
+function searchTweets() {
+	var Twitter = require("twitter");
+	var client = new Twitter(keys.twitter);
+	var params = {screen_name: 'liu00327'};
+	client.get('statuses/user_timeline', params, function(error, tweets, response) {
+		if (!error) {
+			console.log("Your last 20 tweets were:\n");
+			log("Output:\n");
+			for (i=0;i<20;i++) {
+				var text = tweets[i].text+"\n";
+				var created = tweets[i].created_at+"\n";
+				log(text+created);
+				console.log(text+created);
+			}
+			log("\n");
+	    }
+	});
 
 }
 
