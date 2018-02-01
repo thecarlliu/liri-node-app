@@ -5,13 +5,13 @@ var keys = require("./keys.js");
 var command = process.argv[2];
 
 //shows last 20 tweets and when they were created
-if (command == "my-tweets") {
+if (command === "my-tweets") {
 	searchTweets();
     log("Input:\n"+process.argv[2]+"\n");
 }
 //shows artist, song name, preview link of song from Spotify, and album the song is from
 //if no song provided, program defaults to "The Sign" by Ace of Base.
-else if (command == "spotify-this-song") {
+else if (command === "spotify-this-song") {
 	if (process.argv.length > 3) {
 		searchSpotify(process.argv[3]);
 		log("Input:\n"+process.argv[2]+" "+process.argv[3]+"\n");
@@ -22,8 +22,8 @@ else if (command == "spotify-this-song") {
 	}
 }
 //outputs omdb data
-//if user doesn't type a movie in, the program deafults to outputting the data for "Mr. Nobody".
-else if (command == "movie-this") {
+//if user doesn't type a movie in, the program defaults to outputting the data for "Mr. Nobody".
+else if (command === "movie-this") {
 	if (process.argv.length > 3) {
 		searchMovie(process.argv[3]);
 		log("Input:\n"+process.argv[2]+" "+process.argv[3]+"\n");
@@ -35,20 +35,20 @@ else if (command == "movie-this") {
 }
 //Uses fs node package to take the text inside of random.txt,
 //then uses it to call one of LIRI'ss commands
-else if (command == "do-what-it-says") {
+else if (command === "do-what-it-says") {
 	var fs = require("fs");
 	fs.readFile("random.txt", "utf8", function(error, data) {
 		if (error) {
 			return console.log(error);
 		}
 		var arr = data.split(",");
-		if (arr[0] == "my-tweets") {
+		if (arr[0] === "my-tweets") {
 			searchTwitter();
 		}
-		if (arr[0] == "spotify-this-song") {
+		if (arr[0] === "spotify-this-song") {
 			searchSpotify(arr[1]);
 		}
-		if (arr[0] == "movie-this") {
+		if (arr[0] === "movie-this") {
 			searchMovie(arr[1]);
 		}
 		log("Input:\n"+arr[0]+" "+arr[1]+"\n");
