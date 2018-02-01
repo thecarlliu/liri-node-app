@@ -34,7 +34,7 @@ else if (command === "movie-this") {
 	}
 }
 //Uses fs node package to take the text inside of random.txt,
-//then uses it to call one of LIRI'ss commands
+//then uses it to call one of LIRI's commands
 else if (command === "do-what-it-says") {
 	var fs = require("fs");
 	fs.readFile("random.txt", "utf8", function(error, data) {
