@@ -86,3 +86,59 @@ Song: I Want It That Way
 Preview: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
 Album: The Hits--Chapter One
 
+Input:
+movie-this Mr.Nobody
+Output:
+Title: Mr. Nobody
+Year: 2009
+Imdb Rating: 7.9/10
+Rotten Tomatoes Rating: 66%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+Input:
+movie-this terminator3
+Input:
+movie-this blindside
+Input:
+movie-this terminator,3
+Output:
+Title: Terminator 3: Rise of the Machines
+Year: 2003
+Imdb Rating: 6.3/10
+Rotten Tomatoes Rating: 69%
+Country: USA, Germany, UK
+Language: English
+Plot: A cybernetic warrior from a post-apocalyptic future travels back in time to protect a 25-year old drifter and his future wife from a most advanced robotic assassin and to ensure they both survive a nuclear attack.
+Actors: Arnold Schwarzenegger, Nick Stahl, Claire Danes, Kristanna Loken
+
+Input:
+movie-this blindside
+Input:
+movie-this the,blind,side
+Output:
+Title: The Blind Side
+Year: 2009
+Imdb Rating: 7.7/10
+Rotten Tomatoes Rating: 67%
+Country: USA
+Language: English
+Plot: The story of Michael Oher, a homeless and traumatized boy who became an All American football player and first round NFL draft pick with the help of a caring woman and her family.
+Actors: Sandra Bullock, Tim McGraw, Quinton Aaron, Jae Head
+
+Input:
+movie-this disasterartist
+Input:
+movie-this disaster,artist
+Output:
+Title: The Disaster Artist
+Year: 2017
+Imdb Rating: 7.9/10
+Rotten Tomatoes Rating: 91%
+Country: USA
+Language: English
+Plot: When Greg Sestero, an aspiring film actor, meets the weird and mysterious Tommy Wiseau in an acting class, they form a unique friendship and travel to Hollywood to make their dreams come true.
+Actors: Dave Franco, James Franco, Seth Rogen, Ari Graynor
+

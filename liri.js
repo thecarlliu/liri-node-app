@@ -13,8 +13,8 @@ if (command === "my-tweets") {
 //if no song provided, program defaults to "The Sign" by Ace of Base.
 else if (command === "spotify-this-song") {
 	if (process.argv.length > 3) {
-		searchSpotify(process.argv[3]);
-		log("Input:\n"+process.argv[2]+" "+process.argv[3]+"\n");
+		searchSpotify(process.argv.slice(3));
+		log("Input:\n"+process.argv[2]+" "+process.argv.slice(3)+"\n");
 	}
 	else {
 		searchSpotify("The Sign Ace of Base");
@@ -25,8 +25,8 @@ else if (command === "spotify-this-song") {
 //if user doesn't type a movie in, the program defaults to outputting the data for "Mr. Nobody".
 else if (command === "movie-this") {
 	if (process.argv.length > 3) {
-		searchMovie(process.argv[3]);
-		log("Input:\n"+process.argv[2]+" "+process.argv[3]+"\n");
+		searchMovie(process.argv.slice(3));
+		log("Input:\n"+process.argv[2]+" "+process.argv.slice(3)+"\n");
 	}
 	else {
 		searchMovie("Mr.Nobody");
